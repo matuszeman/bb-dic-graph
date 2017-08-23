@@ -1,0 +1,30 @@
+{
+  "name": "@kapitchi/bb-dic-graph",
+  "version": "0.1.0",
+  "description": "bb-dic dependency graph generator",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha 'src/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matuszeman/bb-dic-graph.git"
+  },
+  "author": "Matus Zeman <matus.zeman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matuszeman/bb-dic-graph/issues"
+  },
+  "homepage": "https://github.com/matuszeman/bb-dic-graph#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "peerDependencies": {
+    "@kapitchi/bb-dic": "^1.5.0"
+  },
+  "devDependencies": {
+    "@kapitchi/bb-dic": "^1.5.0",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}

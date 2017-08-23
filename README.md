@@ -1,2 +1,11 @@
-# bb-dic-dependency
-bb-dic dependency graph generator
+# bb-dic dependency graph generator
+
+Work in progress
+
+# Development
+
+## Testing
+
+```
+npm test
+```
