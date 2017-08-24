@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-class JsonGenerator {
+class SnapshotGenerator {
   generate(dic, service) {
     const ret = dic.findContainer(service);
     if (!ret.def) {
@@ -13,6 +13,11 @@ class JsonGenerator {
       children: []
     };
 
+    if (!def.params) {
+      //console.log(def);//XXX
+      return node;
+    }
+
     for (const dep of def.params) {
       node.children.push(this.generate(def.container, dep));
     }
@@ -21,4 +26,4 @@ class JsonGenerator {
   }
 }
 
-module.exports = JsonGenerator;
+module.exports = SnapshotGenerator;
